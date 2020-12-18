@@ -40,6 +40,9 @@ class _SearchAppBarState extends State<SearchAppBar> {
 
   @override
   void initState() {
+    //unfocus everything
+    WidgetsBinding.instance.focusManager.primaryFocus?.unfocus();
+
     // Focus
     _focus.addListener(_focusListener);
 
